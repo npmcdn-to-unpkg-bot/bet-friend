@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+    <!-- build:css dist_css/styles.css -->
+    <link href="css/ionic.app.min.css" type="text/css" rel="stylesheet">
+    <link href="lib/ionic-toast/src/style.css" rel="stylesheet">
+    <!-- endbuild -->
+
+    <script src="cordova.js"></script>
+
+  </head>
+  <body ng-app="starter" ng-strict-di>
+
+    <application></application>
+
+    <!-- build:js dist_js/vendor.js -->
+    <script src="lib/ionic/js/ionic.bundle.min.js"></script>
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+
+    <script src="lib/ionic-toast/src/ionic-toast.js"></script>
+    <script src="lib/angular-translate/angular-translate.js"></script>
+    <script src="lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js dist_js/app.js -->
+    <script src="dist/dist_js/app/app.js"></script>
+    <script src="dist/dist_js/app/config/app/app.ionic.js"></script>
+    <script src="dist/dist_js/app/config/app/app.translate.js"></script>
+    <script src="dist/dist_js/app/config/app/app.http.js"></script>
+    <script src="dist/dist_js/app/config/app/app.routes.js"></script>
+
+    <script src="dist/dist_js/app/config/constants.js"></script>
+    <script src="dist/dist_js/app/utils/boilerplate.utils.js"></script>
+
+    <script src="dist/dist_js/app/service/common/ajax.manager.service.js"></script>
+    <script src="dist/dist_js/app/service/common/storage.service.js"></script>
+
+    <script src="dist/dist_js/app/service/login.service.js"></script>
+    <script src="dist/dist_js/app/service/round.service.js"></script>
+    <script src="dist/dist_js/app/service/site.service.js"></script>
+
+    <script src="dist/dist_js/app/directive/common/appversion.js"></script>
+    <script src="dist/dist_js/app/directive/common/hidetabs.js"></script>
+    <script src="dist/dist_js/app/directive/common/pageloader.js"></script>
+    <script src="dist/dist_js/app/directive/common/notify.js"></script>
+    <script src="dist/dist_js/app/directive/common/toast.js"></script>
+
+    <script src="dist/dist_js/app/directive/component/application.directive.js"></script>
+    <script src="dist/dist_js/app/directive/component/login/login.directive.js"></script>
+    <script src="dist/dist_js/app/directive/component/menu.directive.js"></script>
+    <script src="dist/dist_js/app/directive/component/round/round.directive.js"></script>
+    <script src="dist/dist_js/app/directive/component/site/site.directive.js"></script>
+
+    <script src="dist/dist_js/app/templates.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "LOADER": "Veuillez patienter...",
+  "LOGIN": {
+    "TITLE": "Connexion",
+    "USERNAME": "Identifiant",
+    "PASSWORD": "Mot de passe"
+  },
+  "ROUND": {
+    "TITLE": "Tournée en cours",
+    "VALIDATION": {
+      "VALIDATE": "Valider la tournée",
+      "INVALIDATE": "Invalider la tournée"
+    }
+  },
+  "SITE": {
+    "TITLE": "Détail du site",
+    "RECEPTION": "Accueil",
+    "DELIVERY": "Remises",
+    "TAKEBACK": "Reprises",
+    "SCAN": "Type de scan",
+    "VALIDATION": {
+      "VALID": "Site validé",
+      "INVALID": "Site non validé",
+      "VALIDATE": "Valider le site",
+      "INVALIDATE": "Invalider le site"
+    }
+  },
+  "BTN": {
+    "CONNECT": "Se connecter",
+    "CANCEL": "Annuler",
+    "CONFIRM": "Confirmer",
+    "OK": "OK",
+    "SCAN": "Scanner"
+  },
+  "MENU": {
+    "ITEM": {
+      "NEWROUND": "Nouvelle tournée",
+      "DISCONNECT": "Déconnexion"
+    },
+    "MODAL": {
+      "NEWROUND": "Démarrer une nouvelle tournée ?"
+    }
+  },
+  "ERROR": {
+    "TITLE": "Erreur",
+    "UNKNOWN": "L'application a rencontré une erreur."
+  }
+}

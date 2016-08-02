@@ -1,0 +1,6 @@
+<ion-list>
+  <ion-item class="item-remove-animate item-icon-right" ng-repeat="remise in sitevm.site.remises track by remise.id" type="item-text-wrap">
+    <strong><div>{{remise.code}}</div></strong>
+    <i class="icon ion-trash-a assertive" ng-click="sitevm.remove_scan($index, 'DEL')"></i>
+  </ion-item>
+</ion-list>

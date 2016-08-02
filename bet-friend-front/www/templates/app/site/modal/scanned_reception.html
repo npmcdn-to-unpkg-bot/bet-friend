@@ -1,0 +1,6 @@
+<ion-list>
+  <ion-item class="item-remove-animate item-icon-right" ng-repeat="rec in sitevm.site.reception track by rec.id" type="item-text-wrap">
+    <strong><div>{{rec.code}}</div></strong>
+    <i class="icon ion-trash-a assertive" ng-click="sitevm.remove_scan($index, 'REC')"></i>
+  </ion-item>
+</ion-list>
