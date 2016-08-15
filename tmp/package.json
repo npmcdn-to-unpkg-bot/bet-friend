@@ -1,0 +1,60 @@
+{
+  "name": "whatsup",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Whats'up mobile application",
+  "author": "Maxime GRIS <maxime.gris@gmail.com>",
+  "contributors": [
+    "Yassine KHELIFA <>"
+  ],
+  "license": "GNU AGPLv3",
+  "keywords": [
+    "whatsup",
+    "android",
+    "ios",
+    "javascript",
+    "mobile",
+    "native",
+    "react-native"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://maxime_gris@bitbucket.org/maxime_gris/whatsup.git"
+  },
+  "engines": {
+    "node": ">=4 <7",
+    "npm": ">=2 <4"
+  },
+  "scripts": {
+    "postinstall": "npm install -g typings eslint eslint-plugin-react eslint-plugin-babel react-native-cli && typings install dt~react --global && typings install dt~react-native --global",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle:ios": "node ./node_modules/react-native/local-cli/cli.js bundle --platform ios --entry-file index.ios.js --bundle-output ios/whatsup/main.jsbundle --dev=false --minify --verbose",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "immutable": "^3.7.6",
+    "lodash": "^4.11.0",
+    "moment": "^2.12.0", 
+    "react": "15.2.1",
+    "react-redux": "^4.4.5",
+	"react-native": "0.31.0",
+    "redux": "^3.4.0",
+    "redux-logger": "^2.6.1",
+    "redux-loop": "^2.1.0",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.0.1",
+    "standard-http-error": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.0.2",
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-react-native": "^1.7.0",
+    "babel-register": "^6.9.0",
+    "eslint": "^2.8.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-babel": "^3.2.0",
+    "eslint-plugin-react": "^4.3.0"
+  }
+}

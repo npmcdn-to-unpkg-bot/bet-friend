@@ -1,0 +1,20 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+charset = "utf-8"
+
+# Matches .js or .jsx
+[*.{js,jsx}]
+end_of_line = crlf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+# Matches .json or .yml
+[*.{json,yml}]
+indent_style = tab
+indent_size = 2
