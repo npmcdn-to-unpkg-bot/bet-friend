@@ -1,14 +1,10 @@
 import React from 'react'
-import {Button} from 'react-toolbox/lib/button'
-import SuccessButton from './SuccessButton.jsx'
+import NavBar from './components/nav-bar/NavBar.jsx'
+import AppCss from './App.scss'
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
-    return <section style={{padding: 20}}>
-        <Button label='Hello World!' />
-        <SuccessButton label='Success!' primary raised />
-      </section>
+
+    return <NavBar />
   }
 }
-
-export default App

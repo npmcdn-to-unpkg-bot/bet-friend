@@ -34,15 +34,21 @@ const config = {
       },
       {
         test: /(\.scss|\.css)$/,
-        loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass')
+        loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass'),
+        exclude: /flexboxgrid/
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
         loader: 'url-loader?limit=100000'
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css?modules',
+        include: /flexboxgrid/
       }
     ]
   },
-  postcss: [autoprefixer],
+  postcss: [autoprefixer]
  // sassLoader: {
  //   data: '@import "theme/_config.scss";',
  //  includePaths: [path.resolve(__dirname, './src')]
