@@ -7,16 +7,23 @@ import AppBar from 'react-toolbox/lib/app_bar'
 import NavBarCss from './NavBar.scss'
 
 export default class NavBar extends React.Component {
+
+  constructor(props) {
+    super(props)
+  }
+
   render() {
 
-    return (<AppBar fixed flat className={NavBarCss.NarBar}>
-          <Grid className={NavBarCss.NarBarGrid} >
-            <Row end='xs' className={NavBarCss.NarBarGrid}>
-              <Col xs={12}>
-                 <a href='/home'>React Toolbox Docs</a>
-              </Col>
-            </Row>
-          </Grid>
-    </AppBar>)
+    return (
+    <AppBar fixed flat className={NavBarCss.NarBar}>
+      <Grid className={NavBarCss.NarBarGrid} >
+        <Row end='xs' className={NavBarCss.NarBarGrid}>
+          <Col xs={12}>
+            <a href='/home'>React Toolbox Docs</a>
+          </Col>
+        </Row>
+      </Grid>
+    </AppBar>
+    )
   }
 }
