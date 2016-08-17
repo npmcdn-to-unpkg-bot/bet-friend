@@ -1,8 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const autoprefixer = require('autoprefixer');
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
+const autoprefixer = require('autoprefixer')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const BUILD_DIR = path.resolve(__dirname, 'build')
 const APP_DIR = path.resolve(__dirname, 'src')
@@ -20,7 +20,7 @@ const config = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('react-toolbox.css', { allChunks: true })
+    new ExtractTextPlugin('style.css', {allChunks: true})
   ],
   module: {
     loaders: [
@@ -35,7 +35,7 @@ const config = {
       {
         test: /(\.scss|\.css)$/,
         loader: ExtractTextPlugin.extract('style', 'css?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!sass'),
-        exclude: /flexboxgrid/
+        exclude: [/flexboxgrid/, '/normalize/']
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -44,7 +44,7 @@ const config = {
       {
         test: /\.css$/,
         loader: 'style!css?modules',
-        include: /flexboxgrid/
+        include: [/flexboxgrid/, '/normalize/']
       }
     ]
   },
