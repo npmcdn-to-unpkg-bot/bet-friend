@@ -15,13 +15,7 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-    <AppBar style={styles.navBar} title='Title' />
+    <AppBar title='Title' />
     )
-  }
-}
-
-const styles = {
-  navBar: {
-    background: '#FF851B'
   }
 }

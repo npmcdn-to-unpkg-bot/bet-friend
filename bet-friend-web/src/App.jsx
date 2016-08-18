@@ -3,7 +3,7 @@ import Radium from 'radium'
 // Material imports
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import {green100, green500, green700} from 'material-ui/styles/colors'
+import {orange100, orange500, orange700} from 'material-ui/styles/colors'
 // Project imports
 import NavBar from './components/nav-bar/NavBar.jsx'
 import AppContainer from './components/app-container/AppContainer.jsx'
@@ -22,7 +22,7 @@ export default class App extends React.Component {
 
     return (
     <MuiThemeProvider muiTheme={muiTheme}>
-      <div style={styles.container}>
+      <div>
         <NavBar />
         <AppContainer />
       </div>
@@ -33,9 +33,9 @@ export default class App extends React.Component {
 
 const muiTheme = getMuiTheme({
   palette: {
-    primary1Color: green500,
-    primary2Color: green700,
-    primary3Color: green100
+    primary1Color: orange500,
+    primary2Color: orange700,
+    primary3Color: orange100
   }
 }, {
   avatar: {
@@ -43,10 +43,3 @@ const muiTheme = getMuiTheme({
   },
   userAgent: navigator.userAgent
 })
-
-const styles = {
-  container: {
-    margin: '0px',
-    padding: '0px'
-  }
-}
