@@ -29,8 +29,9 @@ const config = {
         test: /(\.js|\.jsx)$/,
         exclude: /(node_modules)/,
         loaders: [
-          require.resolve('react-hot-loader'),
-          require.resolve('babel-loader')
+          'react-hot-loader',
+          'babel-loader',
+          'eslint-loader'
         ]
       },
       {
@@ -49,7 +50,10 @@ const config = {
       }
     ]
   },
-  postcss: [autoprefixer]
+  postcss: [autoprefixer],
+  eslint: {
+    configFile: './.eslintrc'
+  }
 }
 
 module.exports = config
