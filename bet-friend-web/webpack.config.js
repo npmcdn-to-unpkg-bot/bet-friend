@@ -8,6 +8,7 @@ const BUILD_DIR = path.resolve(__dirname, 'build')
 const APP_DIR = path.resolve(__dirname, 'src')
 
 const config = {
+  devtool: 'eval',
   entry: [
     'webpack-dev-server/client?http://localhost:3000', // WebpackDevServer host and port
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
@@ -16,7 +17,7 @@ const config = {
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/build/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -49,10 +50,6 @@ const config = {
     ]
   },
   postcss: [autoprefixer]
- // sassLoader: {
- //   data: '@import "theme/_config.scss";',
- //  includePaths: [path.resolve(__dirname, './src')]
- // }
 }
 
 module.exports = config
