@@ -26,6 +26,7 @@ const styles = {
   appContainer: {
     position: 'relative',
     top: '10px',
-    left: '0px'
+    left: '0px',
+    padding: '0'
   }
 }
