@@ -1,0 +1,9 @@
+// use autoprefixer
+// Fix normalize.scss button with material ui
+span[type=button] {
+  appearance: none;
+}
+
+a[type=button] {
+  appearance: none;
+}

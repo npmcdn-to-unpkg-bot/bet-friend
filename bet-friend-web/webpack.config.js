@@ -10,6 +10,7 @@ const APP_DIR = path.resolve(__dirname, 'src')
 const config = {
   devtool: 'eval',
   entry: [
+    'whatwg-fetch',
     'webpack-dev-server/client?http://localhost:3000', // WebpackDevServer host and port
     'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
     APP_DIR + '/index.jsx'

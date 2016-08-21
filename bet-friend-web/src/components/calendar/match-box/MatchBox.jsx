@@ -1,9 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
-
-// FlexBox imports
 import {Col} from 'react-flexbox-grid/lib'
-// React ToolBox imports
 import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card'
 
 @Radium

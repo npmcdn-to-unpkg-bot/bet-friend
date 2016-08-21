@@ -1,15 +1,13 @@
 import React from 'react'
 import Radium from 'radium'
-// Material imports
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import {orange100, orange500, orange700} from 'material-ui/styles/colors'
-// Project imports
+// Components
 import NavBar from './components/nav-bar/NavBar.jsx'
-import AppContainer from './components/app-container/AppContainer.jsx'
-import AppCss from './App.scss'
 
-// Exemple https://github.com/callemall/material-ui-webpack-example/blob/25938ac6f5db94645e6ea9f24a903792d3133c5d/src/app/Main.js
+// Exemple https://github.com/callemall/material-ui-webpack-example/
+// blob/25938ac6f5db94645e6ea9f24a903792d3133c5d/src/app/Main.js
 
 @Radium
 export default class App extends React.Component {
@@ -24,7 +22,7 @@ export default class App extends React.Component {
     <MuiThemeProvider muiTheme={muiTheme}>
       <div>
         <NavBar />
-        <AppContainer />
+        {this.props.children}
       </div>
     </MuiThemeProvider>
     )
