@@ -1,7 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow} from 'material-ui/Table'
-import {Row,Col} from 'react-flexbox-grid/lib'
 // Components
 import TeamPosition from './team-position/TeamPosition.jsx'
 // Services

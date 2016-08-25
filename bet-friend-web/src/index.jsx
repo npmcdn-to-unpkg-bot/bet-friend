@@ -6,6 +6,9 @@ import React from 'react'
 import {render} from 'react-dom'
 import {IndexRedirect, Router, Route, hashHistory, Redirect} from 'react-router'
 
+import {Provider} from 'react-redux'
+import store from './services/common/StoreService.jsx'
+
 import App from './App.jsx'
 import AppContainer from './components/app-container/AppContainer.jsx'
 import LeagueTable from './components/league-table/LeagueTable.jsx'
@@ -18,14 +21,16 @@ import './assets/scss/global.scss'
 injectTapEventPlugin()
 
 render(
-<Router history={hashHistory}>
-  <Route path='/' component={App}>
-    <IndexRedirect to='/app/calendar' />
-    <Route path='app' component={AppContainer}>
-      <Route path='league' component={LeagueTable}/>
-      <Route path='calendar' component={Calendar}/>
+<Provider store={store}>
+  <Router history={hashHistory}>
+    <Route path='/' component={App}>
+      <IndexRedirect to='/app/calendar' />
+      <Route path='app' component={AppContainer}>
+        <Route path='league' component={LeagueTable}/>
+        <Route path='calendar' component={Calendar}/>
+      </Route>
     </Route>
-  </Route>
-  <Redirect from='*' to='/app/calendar' />
-</Router>
+    <Redirect from='*' to='/app/calendar' />
+  </Router>
+</Provider>
 , document.getElementById('app'))
