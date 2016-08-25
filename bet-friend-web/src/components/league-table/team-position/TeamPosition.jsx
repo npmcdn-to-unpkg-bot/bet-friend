@@ -26,11 +26,11 @@ export default class TeamPosition extends React.Component {
             <Col xs={10}><span style={styles.height}>{this.props.team.teamName}</span></Col>
           </Row>
         </TableRowColumn>
+        <TableRowColumn style={styles.other}>{this.props.team.points}</TableRowColumn>
         <TableRowColumn style={styles.other}>{this.props.team.playedGames}</TableRowColumn>
         <TableRowColumn style={styles.other}>{this.props.team.wins}</TableRowColumn>
         <TableRowColumn style={styles.other}>{this.props.team.draws}</TableRowColumn>
         <TableRowColumn style={styles.other}>{this.props.team.losses}</TableRowColumn>
-        <TableRowColumn style={styles.other}>{this.props.team.points}</TableRowColumn>
         <TableRowColumn style={styles.other}>
           <span style={[this.props.team.goalDifference > 0 && styles.positive,
             this.props.team.goalDifference < 0 && styles.negative]}>{this.props.team.goalDifference}</span>

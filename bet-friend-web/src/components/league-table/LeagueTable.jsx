@@ -67,11 +67,11 @@ export default class LeagueTable extends React.Component {
 const tableFormat = [
   {title: 'Pos.', style: {width: '25px'}},
   {title: 'Equipe', style: {width: '170px'}},
+  {title: 'Points', style: {width: '30px'}},
   {title: 'Joué', style: {width: '30px'}},
   {title: 'Victoires', style: {width: '30px'}},
   {title: 'Nuls', style: {width: '30px'}},
   {title: 'Défaites', style: {width: '30px'}},
-  {title: 'Points', style: {width: '30px'}},
   {title: 'Différence', style: {width: '30px'}}
 ]
 
